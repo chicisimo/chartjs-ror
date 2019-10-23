@@ -51,9 +51,11 @@ module Chartjs
           };
 
           if (typeof Chart !== "undefined" && Chart !== null) {
+            console.log("Test");
             initChart();
           }
           else {
+            console.log("Not initialized");
             /* W3C standard */
             if (window.addEventListener) {
               window.addEventListener("load", initChart, false);
